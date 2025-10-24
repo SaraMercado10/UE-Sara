@@ -22,6 +22,18 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=M9uKHO">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=M9uKHO" type="text/css">
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .login-required-alert {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: none;
+  }
+</style>
 </head>
 <body>
 
@@ -89,123 +101,130 @@
   </section>
 
   <section data-bs-version="5.1" class="features03 cid-v0qdPSQoIq" id="features03-1l">
-    <div class="container">
-      <div class="row justify-content-center mb-4">
-        <div class="col-12 content-head">
-          <div class="mbr-section-head">
-            <h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-              <strong>Espectáculos Destacados</strong>
-            </h2>
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head">
+          <h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Espectáculos Destacados</strong>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
+        <div class="item-wrapper h-100 d-flex flex-column">
+          <div class="item-img mb-3">
+            <img src="assets/images/Hamlet.jpg" alt="Hamlet" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
+          </div>
+          <div class="item-content align-left flex-grow-1 d-flex flex-column">
+            <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>Hamlet</strong></h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
+              <strong>Temática:</strong> Drama clásico<br>
+              <strong>Elenco:</strong> Juan Méndez, Lucía Rojas, Carlos Vega
+            </p>
+            <div class="mbr-section-btn item-footer mt-auto">
+              <button class="btn item-btn btn-primary display-7 buy-ticket" data-title="Hamlet">Comprar Entradas</button>
+              <div class="login-required-alert" id="alert-hamlet"></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
-          <div class="item-wrapper h-100 d-flex flex-column">
-            <div class="item-img mb-3">
-              <img src="assets/images/Hamlet.jpg" alt="Hamlet" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
-            </div>
-            <div class="item-content align-left flex-grow-1 d-flex flex-column">
-              <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>Hamlet</strong></h5>
-              <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
-                <strong>Temática:</strong> Drama clásico<br>
-                <strong>Elenco:</strong> Juan Méndez, Lucía Rojas, Carlos Vega
-              </p>
-              <div class="mbr-section-btn item-footer mt-auto">
-                <a href="#" class="btn item-btn btn-primary display-7">Comprar Entradas</a>
-              </div>
+
+      <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
+        <div class="item-wrapper h-100 d-flex flex-column">
+          <div class="item-img mb-3">
+            <img src="assets/images/bernarda-alba.jpg" alt="La Casa de Bernarda Alba" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
+          </div>
+          <div class="item-content align-left flex-grow-1 d-flex flex-column">
+            <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>La Casa de Bernarda Alba</strong></h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
+              <strong>Temática:</strong> Drama familiar<br>
+              <strong>Elenco:</strong> Marta Duarte, Sofía León, Elena Ruiz
+            </p>
+            <div class="mbr-section-btn item-footer mt-auto">
+              <button class="btn item-btn btn-primary display-7 buy-ticket" data-title="Bernarda Alba">Comprar Entradas</button>
+              <div class="login-required-alert" id="alert-bernarda-alba"></div>
             </div>
           </div>
         </div>
-        <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
-          <div class="item-wrapper h-100 d-flex flex-column">
-            <div class="item-img mb-3">
-              <img src="assets/images/bernarda-alba.jpg" alt="La Casa de Bernarda Alba" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
-            </div>
-            <div class="item-content align-left flex-grow-1 d-flex flex-column">
-              <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>La Casa de Bernarda Alba</strong></h5>
-              <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
-                <strong>Temática:</strong> Drama familiar<br>
-                <strong>Elenco:</strong> Marta Duarte, Sofía León, Elena Ruiz
-              </p>
-              <div class="mbr-section-btn item-footer mt-auto">
-                <a href="#" class="btn item-btn btn-primary display-7">Comprar Entradas</a>
-              </div>
+      </div>
+
+      <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
+        <div class="item-wrapper h-100 d-flex flex-column">
+          <div class="item-img mb-3">
+            <img src="assets/images/elreyleon.jpg" alt="El Rey León" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
+          </div>
+          <div class="item-content align-left flex-grow-1 d-flex flex-column">
+            <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>El Rey León</strong></h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
+              <strong>Temática:</strong> Musical familiar<br>
+              <strong>Elenco:</strong> Adrián Lagos, Valeria Montes, Diego Cruz
+            </p>
+            <div class="mbr-section-btn item-footer mt-auto">
+              <button class="btn item-btn btn-primary display-7 buy-ticket" data-title="El Rey León">Comprar Entradas</button>
+              <div class="login-required-alert" id="alert-el-rey-leon"></div>
             </div>
           </div>
         </div>
-        <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
-          <div class="item-wrapper h-100 d-flex flex-column">
-            <div class="item-img mb-3">
-              <img src="assets/images/elreyleon.jpg" alt="El Rey León" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
-            </div>
-            <div class="item-content align-left flex-grow-1 d-flex flex-column">
-              <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>El Rey León</strong></h5>
-              <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
-                <strong>Temática:</strong> Musical familiar<br>
-                <strong>Elenco:</strong> Adrián Lagos, Valeria Montes, Diego Cruz
-              </p>
-              <div class="mbr-section-btn item-footer mt-auto">
-                <a href="#" class="btn item-btn btn-primary display-7">Comprar Entradas</a>
-              </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
+        <div class="item-wrapper h-100 d-flex flex-column">
+          <div class="item-img mb-3">
+            <img src="assets/images/miserables.webp" alt="Les Misérables" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
+          </div>
+          <div class="item-content align-left flex-grow-1 d-flex flex-column">
+            <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>Les Misérables</strong></h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
+              <strong>Temática:</strong> Drama histórico musical<br>
+              <strong>Elenco:</strong> Tomás Ríos, Camila Núñez, Roberto Silva
+            </p>
+            <div class="mbr-section-btn item-footer mt-auto">
+              <button class="btn item-btn btn-primary display-7 buy-ticket" data-title="Les Misérables">Comprar Entradas</button>
+              <div class="login-required-alert" id="alert-les-miserables"></div>
             </div>
           </div>
         </div>
-        <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
-          <div class="item-wrapper h-100 d-flex flex-column">
-            <div class="item-img mb-3">
-              <img src="assets/images/miserables.webp" alt="Les Misérables" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
-            </div>
-            <div class="item-content align-left flex-grow-1 d-flex flex-column">
-              <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>Les Misérables</strong></h5>
-              <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
-                <strong>Temática:</strong> Drama histórico musical<br>
-                <strong>Elenco:</strong> Tomás Ríos, Camila Núñez, Roberto Silva
-              </p>
-              <div class="mbr-section-btn item-footer mt-auto">
-                <a href="#" class="btn item-btn btn-primary display-7">Comprar Entradas</a>
-              </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
+        <div class="item-wrapper h-100 d-flex flex-column">
+          <div class="item-img mb-3">
+            <img src="assets/images/boda.webp" alt="Bodas de Sangre" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
+          </div>
+          <div class="item-content align-left flex-grow-1 d-flex flex-column">
+            <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>Bodas de Sangre</strong></h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
+              <strong>Temática:</strong> Tragedia rural<br>
+              <strong>Elenco:</strong> Laura Mendoza, Iván Rojas, Paula Soto
+            </p>
+            <div class="mbr-section-btn item-footer mt-auto">
+              <button class="btn item-btn btn-primary display-7 buy-ticket" data-title="Bodas de Sangre">Comprar Entradas</button>
+              <div class="login-required-alert" id="alert-bodas-de-sangre"></div>
             </div>
           </div>
         </div>
-        <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
-          <div class="item-wrapper h-100 d-flex flex-column">
-            <div class="item-img mb-3">
-              <img src="assets/images/boda.webp" alt="Bodas de Sangre" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
-            </div>
-            <div class="item-content align-left flex-grow-1 d-flex flex-column">
-              <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>Bodas de Sangre</strong></h5>
-              <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
-                <strong>Temática:</strong> Tragedia rural<br>
-                <strong>Elenco:</strong> Laura Mendoza, Iván Rojas, Paula Soto
-              </p>
-              <div class="mbr-section-btn item-footer mt-auto">
-                <a href="#" class="btn item-btn btn-primary display-7">Comprar Entradas</a>
-              </div>
-            </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
+        <div class="item-wrapper h-100 d-flex flex-column">
+          <div class="item-img mb-3">
+            <img src="assets/images/medico.jpg" alt="El Médico a Palos" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
           </div>
-        </div>
-        <div class="item features-image col-12 col-md-6 col-lg-4 mb-4">
-          <div class="item-wrapper h-100 d-flex flex-column">
-            <div class="item-img mb-3">
-              <img src="assets/images/medico.jpg" alt="El Médico a Palos" class="w-100" style="aspect-ratio: 3/2; object-fit: cover;">
-            </div>
-            <div class="item-content align-left flex-grow-1 d-flex flex-column">
-              <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>El Médico a Palos</strong></h5>
-              <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
-                <strong>Temática:</strong> Comedia clásica<br>
-                <strong>Elenco:</strong> Fernando Díaz, Carla Vega, Mario López
-              </p>
-              <div class="mbr-section-btn item-footer mt-auto">
-                <a href="#" class="btn item-btn btn-primary display-7">Comprar Entradas</a>
-              </div>
+          <div class="item-content align-left flex-grow-1 d-flex flex-column">
+            <h5 class="item-title mbr-fonts-style mb-2 display-5"><strong>El Médico a Palos</strong></h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7 flex-grow-1">
+              <strong>Temática:</strong> Comedia clásica<br>
+              <strong>Elenco:</strong> Fernando Díaz, Carla Vega, Mario López
+            </p>
+            <div class="mbr-section-btn item-footer mt-auto">
+              <button class="btn item-btn btn-primary display-7 buy-ticket" data-title="El Médico a Palos">Comprar Entradas</button>
+              <div class="login-required-alert" id="alert-el-medico-a-palos"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
   <section data-bs-version="5.1" class="footer3 cid-v0qfkRiYRN" once="footers" id="footer03-1r">
     <div class="container">
       <div class="row">
