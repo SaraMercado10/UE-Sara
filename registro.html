@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="assets/images/logoteatro.png" type="image/x-icon">
     <meta name="description" content="">
-    <title>Iniciar Sesión</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/parallax/jarallax.css">
@@ -27,11 +27,10 @@
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=M9uKHO" type="text/css">
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <style>
-        /* Estilo personalizado para el mensaje de error */
-        #loginFeedback .alert-danger {
-            background-color: #f8d7da;
-            color: #721c24;
-            border-color: #f5c6cb;
+        .alert-custom {
+            background-color: #d1ecf1;
+            color: #0c5460;
+            border-color: #bee5eb;
         }
     </style>
 </head>
@@ -71,46 +70,70 @@
                         <li class="nav-item"><a class="nav-link link text-black display-4" href="salas.html">Salas</a>
                         </li>
                     </ul>
-                    <div class="navbar-buttons mbr-section-btn">
+                    <div class="navbar-buttons mbr-section-btn auth-buttons">
                         <a class="btn btn-primary display-4" href="login.html">Iniciar Sesión</a>
-                        <a class="btn btn-outline-primary display-4 ms-2" href="register.html">Registrarse</a>
+                        <a class="btn btn-outline-primary display-4 ms-2" href="registro.html">Registrarse</a>
                     </div>
                 </div>
             </div>
         </nav>
     </section>
 
-    <section data-bs-version="5.1" class="form03 cid-v0qffsv0qt" id="form03-1q">
-        <div class="container">
+    <section data-bs-version="5.1" class="form5 cid-v0qf3MnYng" id="form02-1p">
+        <div class="container p-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 item-wrapper">
+                <div class="col-12 content-head">
                     <div class="mbr-section-head mb-5">
                         <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                            <strong>Iniciar Sesión</strong>
+                            <strong>Crear Cuenta</strong>
                         </h3>
                     </div>
+                </div>
+            </div>
+
+            <div id="successMessage" class="alert alert-custom alert-dismissible fade show text-center" role="alert"
+                style="display: none;">
+                <strong>¡Registro exitoso!</strong> Bienvenido/a al Telón de los Susurros. Redirigiendo...
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 mx-auto">
                     <div id="feedbackMessage" class="mb-3"></div>
-                    <form id="loginForm" class="mbr-form">
-                        <div class="dragArea row">
-                            <div class="col-12 form-group mb-3">
-                                <input type="email" id="email" name="email" placeholder="Correo electrónico"
-                                    class="form-control" required>
+                    <form id="registerForm" class="mbr-form">
+                        <div class="dragArea row g-3">
+                            <div class="col-md-6">
+                                <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
                             </div>
-                            <div class="col-12 form-group mb-3">
-                                <input type="password" id="password" name="password" placeholder="Contraseña"
-                                    class="form-control" required>
+                            <div class="col-md-6">
+                                <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>
                             </div>
-                            <div class="col-12 align-center mbr-section-btn">
-                                <button type="submit" class="btn btn-primary display-7 me-2">Entrar</button>
-                                <a href="registro.html" class="btn btn-outline-secondary display-7">Regístrate</a>
+                            <div class="col-12">
+                                <input type="email" id="email" class="form-control" placeholder="Correo electrónico"
+                                    required>
+                            </div>
+                            <div class="col-12">
+                                <input type="password" id="password" class="form-control" placeholder="Contraseña"
+                                    minlength="6" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="password" id="confirmPassword" class="form-control"
+                                    placeholder="Confirmar contraseña" minlength="6" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="terminos" required>
+                                    <label class="form-check-label" for="terminos">
+                                        Acepto los <a href="#" class="text-primary">términos y condiciones</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center gap-3 mt-3">
+                                <button type="submit" class="btn btn-primary display-7">Registrarse</button>
+                                <a href="index.html" class="btn btn-outline-secondary display-7">Cancelar</a>
                             </div>
                         </div>
                     </form>
-                </div>
-                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
-                    <div class="image-wrapper">
-                        <img class="w-100" src="assets/images/gallery04.jpg" alt="Teatro">
-                    </div>
                 </div>
             </div>
         </div>

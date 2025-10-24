@@ -1,25 +1,24 @@
-// auth.js - Simulación básica de autenticación con localStorage
-
 function checkAuth() {
   const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-  const authButtons = document.querySelector('.auth-buttons');
-  const userGreeting = document.querySelector('.user-greeting');
+  const authContainer = document.querySelector('.auth-buttons');
 
-  if (isLoggedIn && authButtons) {
+  if (!authContainer) return;
+
+  if (isLoggedIn) {
     const userName = localStorage.getItem('userName') || 'Usuario';
-    authButtons.innerHTML = `
-      <span class="user-greeting">Hola, ${userName}</span>
-      <a href="comprar.html" class="btn-primary">Comprar Entrada</a>
-      <a href="#" class="btn-outline" onclick="logout()">Cerrar Sesión</a>
+    authContainer.innerHTML = `
+      <span class="user-greeting me-3 text-black align-self-center">Hola, ${userName}</span>
+      <a href="comprar.html" class="btn btn-success display-4">Comprar Entrada</a>
+      <a href="#" class="btn btn-outline-secondary display-4 ms-2" onclick="logout(event)">Cerrar Sesión</a>
     `;
   }
 }
 
-function logout() {
+function logout(e) {
+  e.preventDefault();
   localStorage.setItem('isLoggedIn', 'false');
   localStorage.removeItem('userName');
-  window.location.href = 'index.html';
+  window.location.reload();
 }
 
-// Ejecutar al cargar cualquier página
 document.addEventListener('DOMContentLoaded', checkAuth);
