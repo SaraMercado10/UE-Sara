@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +37,17 @@
       display: none;
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XT3MCYNWQE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XT3MCYNWQE');
+  </script>
 </head>
+
 <body>
 
   <section data-bs-version="5.1" class="menu menu5 cid-v0qdyod8Aw" once="menu" id="menu05-1j">
@@ -94,7 +105,6 @@
 
       <div class="row justify-content-center">
         <div class="col-lg-8 mx-auto">
-          <!-- Mensaje de éxito -->
           <div id="successMessage" class="success-message text-center">
             <strong>¡Gracias por tu sugerencia!</strong><br>
             Hemos recibido tu mensaje y lo tendremos en cuenta para seguir mejorando.
@@ -103,7 +113,8 @@
             <div class="dragArea row g-3">
               <div class="col-12">
                 <label class="form-label mbr-fonts-style display-7">Tu sugerencia o comentario</label>
-                <textarea id="suggestion" class="form-control" rows="5" placeholder="Escribe aquí tu sugerencia..." required></textarea>
+                <textarea id="suggestion" class="form-control" rows="5" placeholder="Escribe aquí tu sugerencia..."
+                  required></textarea>
               </div>
               <div class="col-12 d-flex justify-content-center mt-3">
                 <button type="submit" class="btn btn-primary display-7">Enviar</button>
@@ -128,11 +139,16 @@
         </div>
         <div class="col-12 mt-4">
           <div class="social-row">
-            <div class="soc-item"><a href="https://www.facebook.com/" target="_blank"><span class="mbr-iconfont socicon-facebook display-7"></span></a></div>
-            <div class="soc-item"><a href="https://x.com/" target="_blank"><span class="mbr-iconfont socicon-twitter"></span></a></div>
-            <div class="soc-item"><a href="https://www.instagram.com/" target="_blank"><span class="mbr-iconfont socicon-instagram"></span></a></div>
-            <div class="soc-item"><a href="https://ar.linkedin.com/" target="_blank"><span class="mbr-iconfont socicon-linkedin"></span></a></div>
-            <div class="soc-item"><a href="https://www.twitch.tv/" target="_blank"><span class="mbr-iconfont socicon-twitch"></span></a></div>
+            <div class="soc-item"><a href="https://www.facebook.com/" target="_blank"><span
+                  class="mbr-iconfont socicon-facebook display-7"></span></a></div>
+            <div class="soc-item"><a href="https://x.com/" target="_blank"><span
+                  class="mbr-iconfont socicon-twitter"></span></a></div>
+            <div class="soc-item"><a href="https://www.instagram.com/" target="_blank"><span
+                  class="mbr-iconfont socicon-instagram"></span></a></div>
+            <div class="soc-item"><a href="https://ar.linkedin.com/" target="_blank"><span
+                  class="mbr-iconfont socicon-linkedin"></span></a></div>
+            <div class="soc-item"><a href="https://www.twitch.tv/" target="_blank"><span
+                  class="mbr-iconfont socicon-twitch"></span></a></div>
           </div>
         </div>
         <div class="col-12 mt-5">
@@ -144,4 +160,5 @@
   <script src="js/main.js"></script>
   <script src="js/contacto.js"></script>
 </body>
+
 </html>
